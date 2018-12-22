@@ -1,0 +1,33 @@
+@import "../../utils/mixins";
+@import "../../utils/variables";
+
+@keyframes rotating {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@include b('icon') {
+  display: inline-block;
+  vertical-align: middle;
+  color: $--color-blueberry;
+  width: 16px;
+  height: 16px;
+  line-height: 1;
+  fill: currentColor;
+  svg {
+    width: inherit;
+    height: inherit;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  @include m('loader') {
+    svg {
+      animation: rotating 2s linear infinite
+    }
+  }
+}

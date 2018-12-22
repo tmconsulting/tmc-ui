@@ -1,0 +1,25 @@
+@import "functions";
+
+@mixin b($name, $namespaced: true, $with-dot: true) {
+  @at-root {
+    #{ b($name, $namespaced, $with-dot) } {
+      @content;
+    }
+  }
+}
+
+@mixin e($name, $scope: null) {
+  @at-root {
+    #{ e($name, $scope) } {
+      @content;
+    }
+  }
+}
+
+@mixin m($name, $scope: null) {
+  @at-root {
+    #{ m($name, $scope) } {
+      @content;
+    }
+  }
+}

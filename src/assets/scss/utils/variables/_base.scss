@@ -1,0 +1,45 @@
+@import "colors";
+
+/* Background
+-------------------------- */
+$--background-color-base: $--color-white-smoke !default;
+
+/* Border
+-------------------------- */
+$--border-width-base: 1px !default;
+$--border-width-radio-base: 2px !default;
+$--border-width-radio-checked-base: 6px !default;
+$--border-style-base: solid !default;
+$--border-color-base: $--color-pastel-gray !default;
+$--border-color-light: mix($--color-white, $--border-color-base, 20%) !default;
+$--border-color-lighter: mix($--color-white, $--border-color-base, 50%) !default;
+$--border-color-extra-light: mix($--color-white, $--border-color-base, 80%) !default;
+$--border-color-hover: $--color-text-placeholder !default;
+$--border-base: $--border-width-base $--border-style-base $--border-color-base !default;
+$--border-radio-base: $--border-width-radio-base $--border-style-base $--border-color-base !default;
+$--border-radius-base: 6px !default;
+$--border-radius-small: 2px !default;
+$--border-radius-circle: 100% !default;
+
+/* Disable base
+-------------------------- */
+$--disabled-fill-base: $--background-color-base !default;
+$--disabled-color-base: $--color-text-placeholder !default;
+$--disabled-border-base: $--border-color-light !default;
+
+/* Border
+-------------------------- */
+$--border-width-base: 1px !default;
+$--border-width-radio-base: 2px !default;
+$--border-width-radio-checked-base: 6px !default;
+$--border-style-base: solid !default;
+$--border-color-base: $--color-pastel-gray !default;
+$--border-color-light: mix($--color-white, $--border-color-base, 20%) !default;
+$--border-color-lighter: mix($--color-white, $--border-color-base, 50%) !default;
+$--border-color-extra-light: mix($--color-white, $--border-color-base, 80%) !default;
+$--border-color-hover: $--color-text-placeholder !default;
+$--border-base: $--border-width-base $--border-style-base $--border-color-base !default;
+$--border-radio-base: $--border-width-radio-base $--border-style-base $--border-color-base !default;
+$--border-radius-base: 6px !default;
+$--border-radius-small: 2px !default;
+$--border-radius-circle: 100% !default;
