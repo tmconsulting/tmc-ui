@@ -1,0 +1,57 @@
+@import "../variables";
+
+@function namespaced($element) {
+  @return $namespace + '-' $element;
+}
+
+@function stateClassName($state) {
+  @return $state-prefix + $state;
+}
+
+@function modifier($root, $modifier) {
+  @return $root + $modifier-separator + $modifier;
+}
+
+.#{namespaced('example-block')} {
+  $modifierName: 'plain';
+
+  // Вариант 1
+  #{modifier(&, $modifierName)} {
+    color: red;
+  }
+
+  // Вариант 2
+  &--#{$modifierName} {
+    color: red;
+  }
+}
+
+@function element($root, $element) {
+  @return $root + $element-separator + $element;
+}
+
+@mixin whenNamespaced($class-name) {
+  .#{namespaced($class-name)} {
+    @content;
+  }
+}
+
+@mixin whenState($state) {
+  @at-root {
+    &.#{stateClassName($state)} {
+      @content;
+    }
+  }
+}
+
+@mixin whenModifier($modifier-name) {
+  #{modifier(&, $modifier-name)} {
+    @content;
+  }
+}
+
+@mixin whenElement($element) {
+  #{element(&, $element)} {
+    @content;
+  }
+}
