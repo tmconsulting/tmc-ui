@@ -113,7 +113,7 @@
     }
 
     get buttonSize(): string {
-      return this.size || this._elFormItemSize || (this.$ELEMENT || {}).size;
+      return this.size || this._elFormItemSize || (this.$ELEMENT || { size: undefined }).size;
     }
   }
 </script>
