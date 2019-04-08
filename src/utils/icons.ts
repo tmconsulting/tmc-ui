@@ -85,6 +85,7 @@ import '!svg-sprite-loader!../assets/icons/man-woman.svg';
 import '!svg-sprite-loader!../assets/icons/message.svg';
 import '!svg-sprite-loader!../assets/icons/minus.svg';
 import '!svg-sprite-loader!../assets/icons/negotiations.svg';
+import '!svg-sprite-loader!../assets/icons/no-pillows.svg';
 import '!svg-sprite-loader!../assets/icons/no-smoking.svg';
 import '!svg-sprite-loader!../assets/icons/parking.svg';
 import '!svg-sprite-loader!../assets/icons/pencil.svg';
