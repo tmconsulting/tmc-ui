@@ -133,6 +133,7 @@
 
   @include m('secondary') {
     min-width: 192px;
+    border-radius: $--button-secondary-border-radius;
 
     &:focus {
       color: $--color-white;
@@ -552,4 +553,3 @@
     }
   }
 }
-
