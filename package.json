@@ -26,7 +26,6 @@
     "@types/node": "^10.12.12",
     "@types/chai": "^4.1.0",
     "@types/mocha": "^5.2.4",
-    "@types/node": "^10.12.12",
     "@vue/cli-plugin-babel": "^3.2.0",
     "@vue/cli-plugin-typescript": "^3.2.0",
     "@vue/cli-plugin-unit-mocha": "^3.2.0",
