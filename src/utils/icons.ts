@@ -62,6 +62,7 @@ import '!svg-sprite-loader!../assets/icons/ereg-not-available.svg';
 import '!svg-sprite-loader!../assets/icons/error.svg';
 import '!svg-sprite-loader!../assets/icons/extinguisher.svg';
 import '!svg-sprite-loader!../assets/icons/files.svg';
+import '!svg-sprite-loader!../assets/icons/finance.svg';
 import '!svg-sprite-loader!../assets/icons/flight-arrive.svg';
 import '!svg-sprite-loader!../assets/icons/flight-depart.svg';
 import '!svg-sprite-loader!../assets/icons/free-transfer.svg';
