@@ -177,9 +177,7 @@
         &:hover,
         &:focus {
           #{ b('icon') } {
-            &-check {
-              color: mix($--color-mantis, $--color-white);
-            }
+            color: mix($--color-mantis, $--color-white);
           }
         }
       }
@@ -193,9 +191,7 @@
         background-color: mix($--color-pastel-gray, $--color-white, 80%);
 
         #{ b('icon') } {
-          &-cross {
-            color: $--color-white;
-          }
+          color: $--color-white;
         }
       }
       &:not(#{ m('disabled', $root) }):hover {
@@ -235,14 +231,26 @@
       color: $--color-sunset-orange;
       border-color: $--color-sunset-orange;
 
+      #{ b('icon') } {
+        color: $--color-sunset-orange;
+      }
+
       &:not(#{ m('disabled', $root) }):focus {
         color: $--color-white;
         background-color: mix( $--color-sunset-orange, $--color-white, 80%);
+
+        #{ b('icon') } {
+          color: $--color-white;
+        }
       }
       &:not(#{ m('disabled', $root) }):hover {
         color: $--color-white;
         background-color: $--color-sunset-orange;
         border-color: $--color-sunset-orange;
+
+        #{ b('icon') } {
+          color: $--color-white;
+        }
       }
       &#{ m('plain', $root) } {
         background-color: mix($--color-sunset-orange, $--color-white, 10%);
@@ -253,6 +261,10 @@
         &:focus {
           color: mix($--color-sunset-orange, $--color-white);
           border-color: mix( $--color-sunset-orange, $--color-white);
+
+          #{ b('icon') } {
+            color: mix($--color-sunset-orange, $--color-white);
+          }
         }
         &#{ m('plain', $root) } {
           background-color: mix($--color-sunset-orange, $--color-white, 10%);
