@@ -1,15 +1,16 @@
-@import "../variables";
+@import "../utils/config";
+@import "../utils/variables";
 
 @function namespaced($element) {
-  @return $namespace + '-' $element;
+  @return $PREFIX + '-' $element;
 }
 
 @function stateClassName($state) {
-  @return $state-prefix + $state;
+  @return $STATE_PREFIX + $state;
 }
 
 @function modifier($root, $modifier) {
-  @return $root + $modifier-separator + $modifier;
+  @return $root + $MODIFIER_SEPARATOR + $modifier;
 }
 
 .#{namespaced('example-block')} {
@@ -27,7 +28,7 @@
 }
 
 @function element($root, $element) {
-  @return $root + $element-separator + $element;
+  @return $root + $ELEMENT_SEPARATOR + $element;
 }
 
 @mixin whenNamespaced($class-name) {
