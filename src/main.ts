@@ -1,3 +1,5 @@
+import TmcCol from '@/components/col/col.vue';
+import TmcRow from '@/components/row/row.vue';
 import Vue from 'vue';
 import App from './App.vue';
 import TmcButton from './components/button/button.vue';
@@ -13,6 +15,9 @@ declare module 'vue/types/vue' {
 
 Vue.component('tmc-button', TmcButton);
 Vue.component('tmc-icon', TmcIcon);
+Vue.component('tmc-row', TmcRow);
+Vue.component('tmc-col', TmcCol);
+
 
 Vue.config.productionTip = false;
 
