@@ -13,8 +13,8 @@ const rowColStoriesOf = storiesOf('Row, Col', module);
 
 const template = `
   <h1>Example:</h1>
-  <tmc-row>
-    <tmc-col v-for="col in cols" :span="24 / cols.length">{{ col }}</tmc-col>
+  <tmc-row :gutter="gutter">
+    <tmc-col v-for="col in cols" :span="gutter / cols.length">{{ col }}</tmc-col>
   </tmc-row>
    
   <h1>Documentation:</h1>
@@ -25,6 +25,7 @@ const template = `
 `;
 
 const exampleData = {
+  gutter: 24,
   cols: [
     1.0005,
     1.2000,

@@ -56,7 +56,7 @@ export default class TmcCol extends Vue {
 
   get gutter(): number {
     let $parent: any = this.$parent;
-    while ($parent && $parent.$options.componentName !== 'TmcRow') {
+    while ($parent && $parent.$options._componentTag !== 'tmc-row') {
       $parent = $parent.$parent;
     }
     return $parent ? $parent.gutter : 0;
