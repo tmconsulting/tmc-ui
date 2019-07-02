@@ -59,6 +59,7 @@ import '!svg-sprite-loader!../assets/icons/double-bed.svg';
 import '!svg-sprite-loader!../assets/icons/download.svg';
 import '!svg-sprite-loader!../assets/icons/elevator.svg';
 import '!svg-sprite-loader!../assets/icons/ereg-not-available.svg';
+import '!svg-sprite-loader!../assets/icons/ereg.svg';
 import '!svg-sprite-loader!../assets/icons/error.svg';
 import '!svg-sprite-loader!../assets/icons/extinguisher.svg';
 import '!svg-sprite-loader!../assets/icons/files.svg';
