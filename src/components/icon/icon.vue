@@ -18,8 +18,8 @@
 
     get iconClass() {
       return [
-        'tmc-icon',
-        this.name ? 'tmc-icon--' + this.name : '',
+        'st-icon',
+        this.name ? 'st-icon--' + this.name : '',
       ];
     }
 

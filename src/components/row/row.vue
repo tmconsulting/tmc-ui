@@ -15,7 +15,7 @@ interface StyleMargins {
 }
 
 @Component
-export default class TmcRow extends Vue {
+export default class StRow extends Vue {
   @Prop({ type: String, default: 'div' })
   tag!: string;
 
@@ -42,10 +42,10 @@ export default class TmcRow extends Vue {
 
   get classList() {
     return [
-      'tmc-row',
-      this.justify !== 'start' ? `tmc-row--justify-${this.justify}` : '',
-      this.align !== 'top' ? `tmc-row--align-${this.align}` : '',
-      this.type === 'flex' ? 'tmc-row--flex' : '',
+      'st-row',
+      this.justify !== 'start' ? `st-row--justify-${this.justify}` : '',
+      this.align !== 'top' ? `st-row--align-${this.align}` : '',
+      this.type === 'flex' ? 'st-row--flex' : '',
     ].filter(Boolean);
   }
 }
