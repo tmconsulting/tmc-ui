@@ -5,33 +5,33 @@ const template = `
 <div>
   <h4>Basic usage</h4>
   <div>
-    <tmc-button type="secondary" icon="check" circle approve></tmc-button>
-    <tmc-button type="secondary" icon="cross" circle cancel></tmc-button>
+    <st-button type="secondary" icon="check" circle approve></st-button>
+    <st-button type="secondary" icon="cross" circle cancel></st-button>
   </div>
   <div>
-    <tmc-button type="secondary" icon="check" circle approve bold-border></tmc-button>
-    <tmc-button type="secondary" icon="cross" circle cancel bold-border></tmc-button>
+    <st-button type="secondary" icon="check" circle approve bold-border></st-button>
+    <st-button type="secondary" icon="cross" circle cancel bold-border></st-button>
   </div>
   <div style="margin: 20px 0">
-    <tmc-button type="default" icon="cross" size="mini">Закрыть карту</tmc-button>
-    <tmc-button type="secondary" icon="location" size="mini">Поиск на карте</tmc-button>
+    <st-button type="default" icon="cross" size="mini">Закрыть карту</st-button>
+    <st-button type="secondary" icon="location" size="mini">Поиск на карте</st-button>
   </div>
   <div>
-    <tmc-button type="secondary" icon="plus">Создать заказ</tmc-button>
-    <tmc-button type="info" icon="circle-plus" size="medium">Добавить перелет</tmc-button>
+    <st-button type="secondary" icon="plus">Создать заказ</st-button>
+    <st-button type="info" icon="circle-plus" size="medium">Добавить перелет</st-button>
   </div>
   <h4>Disable usage</h4>
   <div>
-    <tmc-button type="secondary" icon="check" circle approve disabled></tmc-button>
-    <tmc-button type="secondary" icon="cross" circle cancel disabled></tmc-button>
+    <st-button type="secondary" icon="check" circle approve disabled></st-button>
+    <st-button type="secondary" icon="cross" circle cancel disabled></st-button>
   </div>
   <div style="margin: 20px 0">
-    <tmc-button type="default" icon="cross" size="mini" disabled>Закрыть карту</tmc-button>
-    <tmc-button type="secondary" icon="location" size="mini" disabled>Поиск на карте</tmc-button>
+    <st-button type="default" icon="cross" size="mini" disabled>Закрыть карту</st-button>
+    <st-button type="secondary" icon="location" size="mini" disabled>Поиск на карте</st-button>
   </div>
   <div>
-    <tmc-button type="secondary" icon="plus" disabled>Создать заказ</tmc-button>
-    <tmc-button type="info" icon="circle-plus" size="medium" disabled>Добавить перелет</tmc-button>
+    <st-button type="secondary" icon="plus" disabled>Создать заказ</st-button>
+    <st-button type="info" icon="circle-plus" size="medium" disabled>Добавить перелет</st-button>
   </div>
 </div>
 `;

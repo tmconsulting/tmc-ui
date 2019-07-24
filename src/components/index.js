@@ -1,14 +1,14 @@
 import Vue from "vue";
 import Banner from "./banner.vue";
-import TmcButton from "./button/button.vue";
-import TmcRow from "./row/row.vue";
-import TmcCol from "./col/col.vue";
+import StButton from "./button/button.vue";
+import StRow from "./row/row.vue";
+import StCol from "./col/col.vue";
 
 const Components = {
   Banner,
-  TmcButton,
-  TmcRow,
-  TmcCol,
+  StButton,
+  StRow,
+  StCol,
 };
 
 Object.keys(Components).forEach(name => {

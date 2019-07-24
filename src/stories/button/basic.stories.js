@@ -3,51 +3,51 @@ import { storiesOf } from '@storybook/vue'
 
 const template = `<h4>Basic usage</h4>
 <div>
-  <tmc-button>Default</tmc-button>
-  <tmc-button type="primary">Primary</tmc-button>
+  <st-button>Default</st-button>
+  <st-button type="primary">Primary</st-button>
 </div>
   <div style="margin: 20px 0">
-  <tmc-button type="secondary">Secondary</tmc-button>
-  <tmc-button type="secondary" cancel>Secondary Cancel</tmc-button>
-  <tmc-button type="secondary" remove>Secondary Delete</tmc-button>
+  <st-button type="secondary">Secondary</st-button>
+  <st-button type="secondary" cancel>Secondary Cancel</st-button>
+  <st-button type="secondary" remove>Secondary Delete</st-button>
 </div>
 <div>
-  <tmc-button type="success">Success</tmc-button>
-  <tmc-button type="info">Info</tmc-button>
-  <tmc-button type="warning">Warning</tmc-button>
-  <tmc-button type="danger">Danger</tmc-button>
+  <st-button type="success">Success</st-button>
+  <st-button type="info">Info</st-button>
+  <st-button type="warning">Warning</st-button>
+  <st-button type="danger">Danger</st-button>
 </div>
 <h4>Plain usage</h4>
 <div style="margin: 20px 0">
-  <tmc-button plain>Plain</tmc-button>
-  <tmc-button type="primary" plain>Primary</tmc-button>
+  <st-button plain>Plain</st-button>
+  <st-button type="primary" plain>Primary</st-button>
 </div>
 <div>
-  <tmc-button type="secondary" plain>Secondary</tmc-button>
-  <tmc-button type="secondary" cancel plain>Secondary Cancel</tmc-button>
-  <tmc-button type="secondary" remove plain>Secondary Delete</tmc-button>
+  <st-button type="secondary" plain>Secondary</st-button>
+  <st-button type="secondary" cancel plain>Secondary Cancel</st-button>
+  <st-button type="secondary" remove plain>Secondary Delete</st-button>
 </div>
 <div style="margin: 20px 0">
-  <tmc-button type="success" plain>Success</tmc-button>
-  <tmc-button type="info" plain>Info</tmc-button>
-  <tmc-button type="warning" plain>Warning</tmc-button>
-  <tmc-button type="danger" plain>Danger</tmc-button>
+  <st-button type="success" plain>Success</st-button>
+  <st-button type="info" plain>Info</st-button>
+  <st-button type="warning" plain>Warning</st-button>
+  <st-button type="danger" plain>Danger</st-button>
 </div>
 <h4>Round usage</h4>
 <div style="margin: 20px 0">
-  <tmc-button round>Round</tmc-button>
-  <tmc-button type="primary" round>Primary</tmc-button>
+  <st-button round>Round</st-button>
+  <st-button type="primary" round>Primary</st-button>
 </div>
 <div>
-  <tmc-button type="secondary" round>Secondary</tmc-button>
-  <tmc-button type="secondary" cancel round>Secondary Cancel</tmc-button>
-  <tmc-button type="secondary" remove round>Secondary Delete</tmc-button>
+  <st-button type="secondary" round>Secondary</st-button>
+  <st-button type="secondary" cancel round>Secondary Cancel</st-button>
+  <st-button type="secondary" remove round>Secondary Delete</st-button>
 </div>
 <div style="margin: 20px 0">
-  <tmc-button type="success" round>Success</tmc-button>
-  <tmc-button type="info" round>Info</tmc-button>
-  <tmc-button type="warning" round>Warning</tmc-button>
-  <tmc-button type="danger" round>Danger</tmc-button>
+  <st-button type="success" round>Success</st-button>
+  <st-button type="info" round>Info</st-button>
+  <st-button type="warning" round>Warning</st-button>
+  <st-button type="danger" round>Danger</st-button>
 </div>`;
 
 storiesOf('Button', module).add('Basic', () => ({

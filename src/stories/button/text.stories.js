@@ -4,16 +4,16 @@ import { storiesOf } from '@storybook/vue'
 const template = `
 <div>
   <div>
-    <tmc-button type="text">Text Button</tmc-button>
-    <tmc-button type="text" disabled>Text Button</tmc-button>
+    <st-button type="text">Text Button</st-button>
+    <st-button type="text" disabled>Text Button</st-button>
   </div>
   <div style="margin: 20px 0">
-    <tmc-button type="text" icon="bucket">Отменить бронирование</tmc-button>
-    <tmc-button type="text" icon="repeat">Повторить заказ</tmc-button>
-    <tmc-button type="text" icon="copy">Скопировать</tmc-button>
-    <tmc-button type="text" icon="star">Добавить в избранное</tmc-button>
-    <tmc-button type="text" icon="upload">Загрузите список в формате .xls (.xlsx)</tmc-button>
-    <tmc-button type="text" icon="advanced-search" search>Расширеный поиск</tmc-button>
+    <st-button type="text" icon="bucket">Отменить бронирование</st-button>
+    <st-button type="text" icon="repeat">Повторить заказ</st-button>
+    <st-button type="text" icon="copy">Скопировать</st-button>
+    <st-button type="text" icon="star">Добавить в избранное</st-button>
+    <st-button type="text" icon="upload">Загрузите список в формате .xls (.xlsx)</st-button>
+    <st-button type="text" icon="advanced-search" search>Расширеный поиск</st-button>
   </div>
 </div>
 `;

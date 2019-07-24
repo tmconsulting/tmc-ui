@@ -23,7 +23,7 @@ interface PropObject {
 }
 
 @Component
-export default class TmcCol extends Vue {
+export default class StCol extends Vue {
   @Prop({ type: String, default: 'div' })
   tag!: string;
 
@@ -56,7 +56,7 @@ export default class TmcCol extends Vue {
 
   get gutter(): number {
     let $parent: any = this.$parent;
-    while ($parent && $parent.$options._componentTag !== 'tmc-row') {
+    while ($parent && $parent.$options._componentTag !== 'st-row') {
       $parent = $parent.$parent;
     }
     return $parent ? $parent.gutter : 0;
@@ -83,14 +83,14 @@ export default class TmcCol extends Vue {
     Object.keys(sizeObject).forEach((sizeName: string) => {
       const sizeValue: number | any = sizeObject[sizeName];
       if (typeof sizeValue === 'number') {
-        classList.push(`tmc-col-${sizeName}-${sizeValue}`);
+        classList.push(`st-col-${sizeName}-${sizeValue}`);
       } else if (typeof sizeValue === 'object') {
         Object.keys(sizeValue).forEach((sizePropName: string) => {
           const sizePropValue = sizeValue[sizePropName];
           classList.push(
             sizePropName !== 'span'
-              ? `tmc-col-${sizeName}-${sizePropName}-${sizePropValue}`
-              : `tmc-col-${sizeName}-${sizePropValue}`,
+              ? `st-col-${sizeName}-${sizePropName}-${sizePropValue}`
+              : `st-col-${sizeName}-${sizePropValue}`,
           );
         });
       }
@@ -111,8 +111,8 @@ export default class TmcCol extends Vue {
       if (propValue || propValue === 0) {
         classList.push(
           propName !== 'span'
-            ? `tmc-col-${propName}-${propValue}`
-            : `tmc-col-${propValue}`,
+            ? `st-col-${propName}-${propValue}`
+            : `st-col-${propValue}`,
         );
       }
     });
@@ -121,7 +121,7 @@ export default class TmcCol extends Vue {
 
   get classList(): string[] {
     return [
-      'tmc-col',
+      'st-col',
       ...this.propClassList,
       ...this.sizeClassList,
     ].filter(Boolean);

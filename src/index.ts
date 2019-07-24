@@ -1,16 +1,16 @@
 import {VueConstructor} from 'vue';
-import TmcButtonGroup from './components/button/button-group.vue';
-import TmcButton from './components/button/button.vue';
-import TmcCol from './components/col/col.vue';
-import TmcIcon from './components/icon/icon.vue';
-import TmcRow from './components/row/row.vue';
+import StButtonGroup from './components/button/button-group.vue';
+import StButton from './components/button/button.vue';
+import StCol from './components/col/col.vue';
+import StIcon from './components/icon/icon.vue';
+import StRow from './components/row/row.vue';
 
 const install = (Vue: VueConstructor) => {
-  Vue.component('tmc-button', TmcButton);
-  Vue.component('tmc-button-group', TmcButtonGroup);
-  Vue.component('tmc-icon', TmcIcon);
-  Vue.component('tmc-row', TmcRow);
-  Vue.component('tmc-col', TmcCol);
+  Vue.component('st-button', StButton);
+  Vue.component('st-button-group', StButtonGroup);
+  Vue.component('st-icon', StIcon);
+  Vue.component('st-row', StRow);
+  Vue.component('st-col', StCol);
 
   Vue.prototype.$ELEMENT = {
     size: '',
@@ -19,9 +19,9 @@ const install = (Vue: VueConstructor) => {
 
 export default {
   install,
-  TmcButton,
-  TmcButtonGroup,
-  TmcIcon,
-  TmcRow,
-  TmcCol,
+  StButton,
+  StButtonGroup,
+  StIcon,
+  StRow,
+  StCol,
 }

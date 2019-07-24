@@ -1,18 +1,18 @@
 <template>
-  <button class="tmc-button"
+  <button class="st-button"
           @click="handleClick"
           :disabled="disabled"
           :autofocus="autofocus"
           :type="nativeType"
           :class="buttonClass">
-    <tmc-icon v-if="loading"
+    <st-icon v-if="loading"
              name="loader"
-             class="tmc-button__icon"
-             @click="handleInnerClick"></tmc-icon>
-    <tmc-icon v-if="icon && !loading"
+             class="st-button__icon"
+             @click="handleInnerClick"></st-icon>
+    <st-icon v-if="icon && !loading"
              :name="icon"
-             class="tmc-button__icon"
-             @click="handleInnerClick"></tmc-icon>
+             class="st-button__icon"
+             @click="handleInnerClick"></st-icon>
     <span v-if="$slots.default"
           @click="handleInnerClick">
       <slot></slot>
@@ -22,14 +22,14 @@
 
 <script lang="ts">
   import {Component, Inject, Prop, Vue} from 'vue-property-decorator';
-  import TmcIcon from '../icon/icon.vue';
+  import StIcon from '../icon/icon.vue';
 
   @Component({
     components: {
-      TmcIcon,
+      StIcon,
     },
   })
-  export default class TmcButton extends Vue {
+  export default class StButton extends Vue {
     @Inject({ default: '' }) elFormItem!: any;
 
     @Prop({ type: String, default: 'default' })
@@ -89,20 +89,20 @@
 
     get buttonClass() {
       return [
-        this.type ? 'tmc-button--' + this.type : '',
-        this.buttonSize ? 'tmc-button--' + this.buttonSize : '',
+        this.type ? 'st-button--' + this.type : '',
+        this.buttonSize ? 'st-button--' + this.buttonSize : '',
         {
-          'tmc-button--disabled': this.disabled,
-          'tmc-button--loading': this.loading,
-          'tmc-button--plain': this.plain,
-          'tmc-button--round': this.round,
-          'tmc-button--circle': this.circle,
-          'tmc-button--approve': this.approve,
-          'tmc-button--cancel': this.cancel,
-          'tmc-button--remove': this.remove,
-          'tmc-button--search': this.search,
-          'tmc-button--icon': this.icon,
-          'tmc-button--bold-border': this.boldBorder,
+          'st-button--disabled': this.disabled,
+          'st-button--loading': this.loading,
+          'st-button--plain': this.plain,
+          'st-button--round': this.round,
+          'st-button--circle': this.circle,
+          'st-button--approve': this.approve,
+          'st-button--cancel': this.cancel,
+          'st-button--remove': this.remove,
+          'st-button--search': this.search,
+          'st-button--icon': this.icon,
+          'st-button--bold-border': this.boldBorder,
         },
       ];
     }

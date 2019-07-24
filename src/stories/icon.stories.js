@@ -22,7 +22,7 @@ icons.forEach((icon) => {
   template += `
     <div :style="itemStyle">
       <div style="font-weight: bold; margin-bottom: 5px;">${icon}</div>
-      <div><tmc-icon name="${icon}" :style="iconStyle"></tmc-icon></div>
+      <div><st-icon name="${icon}" :style="iconStyle"></st-icon></div>
     </div>
   `;
 });

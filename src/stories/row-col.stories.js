@@ -13,9 +13,9 @@ const rowColStoriesOf = storiesOf('Row, Col', module);
 
 const template = `
   <h1>Example:</h1>
-  <tmc-row :gutter="gutter">
-    <tmc-col v-for="col in cols" :span="gutter / cols.length">{{ col }}</tmc-col>
-  </tmc-row>
+  <st-row :gutter="gutter">
+    <st-col v-for="(col, index) in cols" :key="index" :span="gutter / cols.length">{{ col }}</st-col>
+  </st-row>
    
   <h1>Documentation:</h1>
   <h2>Row attributes</h2>

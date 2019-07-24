@@ -1,5 +1,5 @@
 <template>
-  <div class="tmc-button-group">
+  <div class="st-button-group">
     <slot></slot>
   </div>
 </template>
@@ -7,5 +7,5 @@
 import {Component, Vue} from 'vue-property-decorator';
 
 @Component
-export default class TmcButton extends Vue {}
+export default class StButton extends Vue {}
 </script>
