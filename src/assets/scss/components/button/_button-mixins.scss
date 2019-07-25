@@ -29,21 +29,21 @@
 
   &:hover,
   &:focus {
-    background: mix($--color-white, $background-color, $--button-hover-tint-percent);
-    border-color: mix($--color-white, $border-color, $--button-hover-tint-percent);
+    background: mix($st-color-white, $background-color, $st-button-hover-tint-percent);
+    border-color: mix($st-color-white, $border-color, $st-button-hover-tint-percent);
     color: $color;
   }
 
   &:active {
-    background: mix($--color-black, $background-color, $--button-active-shade-percent);
-    border-color: mix($--color-black, $border-color, $--button-active-shade-percent);
+    background: mix($st-color-black, $background-color, $st-button-active-shade-percent);
+    border-color: mix($st-color-black, $border-color, $st-button-active-shade-percent);
     color: $color;
     outline: none;
   }
 
   &#{ m('active', $root) } {
-    background: mix($--color-black, $background-color, $--button-active-shade-percent);
-    border-color: mix($--color-black, $border-color, $--button-active-shade-percent);
+    background: mix($st-color-black, $background-color, $st-button-active-shade-percent);
+    border-color: mix($st-color-black, $border-color, $st-button-active-shade-percent);
     color: $color;
   }
 
@@ -52,9 +52,9 @@
     &:hover,
     &:focus,
     &:active {
-      color: $--color-white;
-      background-color: mix($background-color, $--color-white);
-      border-color: mix($border-color, $--color-white);
+      color: $st-color-white;
+      background-color: mix($background-color, $st-color-white);
+      border-color: mix($border-color, $st-color-white);
     }
   }
 
@@ -65,20 +65,20 @@
 
 @mixin button-plain($color, $root) {
   color: $color;
-  background: mix($--color-white, $color, 90%);
-  border-color: mix($--color-white, $color, 60%);
+  background: mix($st-color-white, $color, 90%);
+  border-color: mix($st-color-white, $color, 60%);
 
   &:hover,
   &:focus {
     background: $color;
     border-color: $color;
-    color: $--color-white;
+    color: $st-color-white;
   }
 
   &:active {
-    background: mix($--color-black, $color, $--button-active-shade-percent);
-    border-color: mix($--color-black, $color, $--button-active-shade-percent);
-    color: $--color-white;
+    background: mix($st-color-black, $color, $st-button-active-shade-percent);
+    border-color: mix($st-color-black, $color, $st-button-active-shade-percent);
+    color: $st-color-white;
     outline: none;
   }
 
@@ -87,9 +87,9 @@
     &:hover,
     &:focus,
     &:active {
-      color: mix($--color-white, $color, 40%);
-      background-color: mix($--color-white, $color, 90%);
-      border-color: mix($--color-white, $color, 80%);
+      color: mix($st-color-white, $color, 40%);
+      background-color: mix($st-color-white, $color, 90%);
+      border-color: mix($st-color-white, $color, 80%);
     }
   }
 }
@@ -229,7 +229,7 @@
       color: $secondary-color;
     }
     &#{ b($name) } &#{ e('icon') }#{ b('icon') } {
-      color: $--color-white;
+      color: $st-color-white;
     }
     &#{ b($name) }:not(#{ m('disabled') }):hover {
       background: transparent;

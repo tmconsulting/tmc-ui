@@ -1,5 +1,6 @@
 @import "../../utils/mixins";
 @import "../../utils/variables";
+@import "variables";
 
 @keyframes rotating {
   from {
@@ -13,11 +14,10 @@
 @include b('icon') {
   display: inline-block;
   vertical-align: middle;
-  color: $--color-blueberry;
-  width: 16px;
-  height: 16px;
+  color: $st-color-blueberry;
+  width: $st-icon-width;
+  height: $st-icon-height;
   line-height: 1;
-  fill: currentColor;
   svg {
     width: inherit;
     height: inherit;
@@ -27,7 +27,7 @@
 
   @include m('loader') {
     svg {
-      animation: rotating 2s linear infinite
+      animation: rotating 2s linear infinite;
     }
   }
 }
