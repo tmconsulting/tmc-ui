@@ -1,9 +1,9 @@
 import {VueConstructor} from 'vue';
-import StButtonGroup from './components/button/button-group.vue';
-import StButton from './components/button/button.vue';
-import StCol from './components/col/col.vue';
-import StIcon from './components/icon/icon.vue';
-import StRow from './components/row/row.vue';
+import StButtonGroup from './components/button-group/index.vue';
+import StButton from './components/button/index.vue';
+import StCol from './components/col/index.vue';
+import StIcon from './components/icon/index.vue';
+import StRow from './components/row/index.vue';
 
 const install = (Vue: VueConstructor) => {
   Vue.component('st-button', StButton);

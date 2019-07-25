@@ -1,12 +1,12 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import '../assets/scss/book-init.scss';
+import './assets/scss/stories/index.scss';
 import Vue from 'vue';
 
-import StButton from '../components/button/button.vue';
-import StButtonGroup from '../components/button/button-group.vue';
-import StIcon from '../components/icon/icon.vue';
-import StRow from '../components/row/row.vue';
-import StCol from '../components/col/col.vue';
+import StButton from '../components/button/index.vue';
+import StButtonGroup from '../components/button-group/index.vue';
+import StIcon from '../components/icon/index.vue';
+import StRow from '../components/row/index.vue';
+import StCol from '../components/col/index.vue';
 
 Vue.component('st-button-group', StButtonGroup);
 Vue.component('st-button', StButton);

@@ -17,7 +17,9 @@ addParameters({
     name: 'spacetab.io',
     url: '#',
     theme: spacetabTheme,
+    addonPanelInRight: true,
   },
 });
 addDecorator(withKnobs);
 configure(loadStories, module);
+

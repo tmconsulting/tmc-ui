@@ -1,8 +1,8 @@
 import Vue from "vue";
 import Banner from "./banner.vue";
-import StButton from "./button/button.vue";
-import StRow from "./row/row.vue";
-import StCol from "./col/col.vue";
+import StButton from "./button/index.vue";
+import StRow from "./row/index.vue";
+import StCol from "./col/index.vue";
 
 const Components = {
   Banner,

@@ -1,54 +1,12 @@
-$--color-white: #fff !default;
-$--color-black: #000 !default;
-$--color-blueberry: #7f95e1 !default;
-$--color-mantis: #5dc376 !default;
-$--color-sunset-orange: #ec5657 !default;
-$--color-meat-brown: #ebb242 !default;
-$--color-davys-grey: #3f4557 !default;
-$--color-dark-grey: #50586d !default;
-$--color-white-smoke: #f4f5f9 !default;
-$--color-dark-gunmetal: #1e1e28 !default;
-$--color-taupe-gray: #909090 !default;
-$--color-pastel-gray: #ccc !default;
-
-$--color-primary: $--color-mantis !default;
-$--color-primary-light-1: mix($--color-white, $--color-primary, 10%) !default;
-$--color-primary-light-2: mix($--color-white, $--color-primary, 20%) !default;
-$--color-primary-light-3: mix($--color-white, $--color-primary, 30%) !default;
-$--color-primary-light-4: mix($--color-white, $--color-primary, 40%) !default;
-$--color-primary-light-5: mix($--color-white, $--color-primary, 50%) !default;
-$--color-primary-light-6: mix($--color-white, $--color-primary, 60%) !default;
-$--color-primary-light-7: mix($--color-white, $--color-primary, 70%) !default;
-$--color-primary-light-8: mix($--color-white, $--color-primary, 80%) !default;
-$--color-primary-light-9: mix($--color-white, $--color-primary, 90%) !default;
-
-$--color-secondary: $--color-blueberry !default;
-$--color-secondary-light-1: mix($--color-white, $--color-secondary, 10%) !default;
-$--color-secondary-light-2: mix($--color-white, $--color-secondary, 20%) !default;
-$--color-secondary-light-3: mix($--color-white, $--color-secondary, 30%) !default;
-$--color-secondary-light-4: mix($--color-white, $--color-secondary, 40%) !default;
-$--color-secondary-light-5: mix($--color-white, $--color-secondary, 50%) !default;
-$--color-secondary-light-6: mix($--color-white, $--color-secondary, 60%) !default;
-$--color-secondary-light-7: mix($--color-white, $--color-secondary, 70%) !default;
-$--color-secondary-light-8: mix($--color-white, $--color-secondary, 80%) !default;
-$--color-secondary-light-9: mix($--color-white, $--color-secondary, 90%) !default;
-
-$--color-success: $--color-mantis !default;
-$--color-warning: $--color-meat-brown !default;
-$--color-danger: $--color-sunset-orange !default;
-$--color-info: $--color-blueberry !default;
-
-$--color-success-light: mix($--color-white, $--color-success, 80%) !default;
-$--color-warning-light: mix($--color-white, $--color-warning, 80%) !default;
-$--color-danger-light: mix($--color-white, $--color-danger, 80%) !default;
-$--color-info-light: mix($--color-white, $--color-info, 80%) !default;
-
-$--color-success-lighter: mix($--color-white, $--color-success, 90%) !default;
-$--color-warning-lighter: mix($--color-white, $--color-warning, 90%) !default;
-$--color-danger-lighter: mix($--color-white, $--color-danger, 90%) !default;
-$--color-info-lighter: mix($--color-white, $--color-info, 90%) !default;
-
-$--color-text-primary: $--color-taupe-gray !default;
-$--color-text-regular: $--color-dark-gunmetal !default;
-$--color-text-secondary: $--color-blueberry !default;
-$--color-text-placeholder: $--color-taupe-gray !default;
+$st-color-white: #fff !default;
+$st-color-black: #000 !default;
+$st-color-blueberry: #7f95e1 !default;
+$st-color-mantis: #5dc376 !default;
+$st-color-sunset-orange: #ec5657 !default;
+$st-color-meat-brown: #ebb242 !default;
+$st-color-white-smoke: #f4f5f9 !default;
+$st-color-pastel-gray: #ccc !default;
+$st-color-taupe-gray: #909090 !default;
+$st-color-dark-grey: #50586d !default;
+$st-color-davys-grey: #3f4557 !default;
+$st-color-dark-gunmetal: #1e1e28 !default;
