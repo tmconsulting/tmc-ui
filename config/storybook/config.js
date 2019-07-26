@@ -1,10 +1,23 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import { configure } from '@storybook/vue'
-
-const req = require.context('../../src/stories', true, /.stories.js$/)
+import {
+  configure,
+  addDecorator,
+  addParameters,
+} from '@storybook/vue';
+import { withKnobs } from '@storybook/addon-knobs';
+import { spacetabTheme } from './spacetab-theme';
 
 function loadStories() {
-  req.keys().forEach(filename => req(filename))
+  const req = require.context('../../src/stories', true, /.stories.js$/);
+  req.keys().forEach(filename => req(filename));
 }
 
-configure(loadStories, module)
+addParameters({
+  options: {
+    name: 'spacetab.io',
+    url: '#',
+    theme: spacetabTheme,
+  },
+});
+addDecorator(withKnobs);
+configure(loadStories, module);

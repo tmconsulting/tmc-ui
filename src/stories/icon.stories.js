@@ -1,63 +1,84 @@
-import { action } from '@storybook/addon-actions';
-import { storiesOf } from '@storybook/vue'
+import { storiesOf } from '@storybook/vue';
+import { text } from '@storybook/addon-knobs';
 import icons from '../assets/icons/icons';
 
-const iconStoriesOf = storiesOf('Icon', module);
-let template = `
-  <div>
-    <div>
-      <div>
-        Icon Color: 
-        <input type="text" v-model="iconColor">
-      </div>
-      <div>
-        Icon Size: 
-        <input type="text" v-model="iconSize">
-      </div>
-    </div>
-    <div style="display: flex; flex-wrap: wrap;">
-  `;
+import iconNotes from '../documentation/icon.md';
 
+let iconsLoopTemplate = '';
 icons.forEach((icon) => {
-  template += `
-    <div :style="itemStyle">
-      <div style="font-weight: bold; margin-bottom: 5px;">${icon}</div>
-      <div><st-icon name="${icon}" :style="iconStyle"></st-icon></div>
-    </div>
+  iconsLoopTemplate += `
+    <li :style="liStyle">
+      <span>${icon}</span>
+      <st-icon name="${icon}" :style="iconStyle"></st-icon>
+    </li>
   `;
 });
-
-template += `
-    </div>
+const template = `
+  <div>
+    <ul :style="ulStyle">
+      ${iconsLoopTemplate}
+    </ul>
   </div>
 `;
 
-iconStoriesOf.add('Icons', () => ({
-  template: template,
-  data() {
-    return {
-      iconColor: 'green',
-      iconSize: '14px',
-      itemStyle: {
-        width: '200px',
-        margin: '10px',
-        textAlign: 'center',
-        background: '#eaeaea',
-        padding: '5px',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center'
-      }
-    }
-  },
-  methods: { action: action('clicked') },
-  computed: {
-    iconStyle() {
+storiesOf('Components/Icon', module).add(
+  'Default',
+  () => ({
+    template: template,
+    props: {
+      size: {
+        default: text('Size', '30px'),
+      },
+      color: {
+        default: text('Color', ''),
+      },
+    },
+    data() {
       return {
-        color: this.iconColor,
-        width: this.iconSize,
-        height: this.iconSize,
+        ulStyle: {
+          display: 'flex',
+          'flex-wrap': 'wrap',
+          'list-style': 'none',
+          padding: 0,
+        },
+        liStyle: {
+          display: 'flex',
+          'justify-content': 'space-between',
+          'align-items': 'center',
+          'flex-direction': 'column',
+          padding: '20px 0',
+          'box-sizing': 'border-box',
+          width: '16.66%',
+          'text-align': 'center',
+          height: '120px',
+          color: '#666',
+          'font-size': '13px',
+          transition: 'color .15s linear',
+          'border': '1px solid #eee',
+        },
+        itemStyle: {
+          width: '200px',
+          margin: '10px',
+          textAlign: 'center',
+          background: '#eaeaea',
+          padding: '5px',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center'
+        }
+      }
+    },
+    computed: {
+      iconStyle() {
+        return {
+          color: this.color,
+          width: this.size,
+          height: this.size,
+        }
       }
     }
-  }
-}));
+  }),
+  {
+    notes: { markdown: iconNotes }
+  },
+);
