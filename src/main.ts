@@ -1,9 +1,9 @@
 import Vue from 'vue';
 import App from './App.vue';
-import StButton from './components/button/button.vue';
-import StCol from './components/col/col.vue';
-import StIcon from './components/icon/icon.vue';
-import StRow from './components/row/row.vue';
+import StButton from './components/button/index.vue';
+import StCol from './components/col/index.vue';
+import StIcon from './components/icon/index.vue';
+import StRow from './components/row/index.vue';
 
 declare module 'vue/types/vue' {
   interface Vue {
