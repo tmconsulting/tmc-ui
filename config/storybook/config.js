@@ -5,11 +5,22 @@ import {
   addParameters,
 } from '@storybook/vue';
 import { withKnobs } from '@storybook/addon-knobs';
+// TODO: Перебраться с addon-notes на storybook-readme
+// import { addReadme } from 'storybook-readme/vue';
 import { spacetabTheme } from './spacetab-theme';
 
 function loadStories() {
-  const req = require.context('../../src/stories', true, /.stories.js$/);
-  req.keys().forEach(filename => req(filename));
+  const defaultStories = require.context('../../src/stories', true, /.stories.js$/);
+  const exampleThemeStories = require.context(
+    '../../src/themes/example/stories',
+    true,
+    /.stories.js$/,
+  );
+  requireStories(defaultStories);
+  requireStories(exampleThemeStories);
+}
+function requireStories(stories) {
+  stories.keys().forEach(filename => stories(filename));
 }
 
 addParameters({
@@ -20,6 +31,7 @@ addParameters({
     addonPanelInRight: true,
   },
 });
+// addDecorator(addReadme);
 addDecorator(withKnobs);
 configure(loadStories, module);
 

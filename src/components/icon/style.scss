@@ -1,5 +1,6 @@
+@import "../../assets/scss/themes/default";
+
 @import "../../assets/scss/utils/mixins";
-@import "../../assets/scss/utils/variables";
 @import "../../assets/scss/components/icon/variables";
 
 @keyframes rotating {
@@ -14,7 +15,7 @@
 @include b('icon') {
   display: inline-block;
   vertical-align: middle;
-  color: $st-color-blueberry;
+  color: $st-icon-color;
   width: $st-icon-width;
   height: $st-icon-height;
   line-height: 1;

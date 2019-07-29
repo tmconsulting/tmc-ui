@@ -42,6 +42,7 @@
     "markdown-loader": "^5.0.0",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
+    "storybook-readme": "^5.0.5",
     "typescript": "^3.0.0",
     "vue-cli-plugin-storybook": "^0.6.1",
     "vue-template-compiler": "^2.6.8"
