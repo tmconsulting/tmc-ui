@@ -1,16 +1,16 @@
 export const template = `
   <div class="storybook-customization">
-    <h2>Customization</h2>
+    <h2>Customization in your project</h2>
     <h3>Via vue.config.js (vue-cli)</h3>
     <div>
       1. Install sass-loader.
-      <pre>
+      <pre><code class="language-sh">
         npm install sass sass-loader
-      </pre>
+      </code></pre>
   
       2. Create a .scss file, import TmcUi theme file, modify variables you want to. 
-      <br><i>If you already have a style file with your local variables you can use it.</i>
-      <pre>
+      <br>If you already have a style file with your local variables you can use it.
+      <pre><code class="language-scss">
         // src/assets/scss/var.scss
         @import '~tmc-ui/src/assets/scss/themes/default';
         
@@ -18,10 +18,10 @@ export const template = `
         $st-color-success: green;
         // Also you can modify components' variables
         $st-button-danger-color: red;
-      </pre>
+      </code></pre>
       
-      3. Setup <b>vue.config.file</b>
-      <pre>
+      3. Setup <i>vue.config.js</i> file.
+      <pre><code class="language-javascript">
         module.exports = {
           css: {
             loaderOptions: {
@@ -31,7 +31,7 @@ export const template = `
             },
           },
         }    
-      </pre>
+      </code></pre>
     </div>
   </div>
 `;
